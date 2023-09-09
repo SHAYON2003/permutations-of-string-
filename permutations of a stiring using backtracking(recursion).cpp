@@ -11,7 +11,7 @@ void permutations(string &str, int i){
   for(int j = i;j<str.size();j++){
      swap(str[i],str[j]);
      permutations(str,i+1);
-    //backtracking
+    //backtracking -> to recreate the original input (thats why we are again swapping the string) and we have used pass by reference also which dont maken any copy of the string
      swap(str[i],str[j]);
   }
  
